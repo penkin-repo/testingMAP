@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <style>
+      :root {
+        font-family: "Roboto Slab", Georgia, "Times New Roman", serif;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* удалить стили */
+      .menu-delete {
+        font-size: 16px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .menu-delete a {
+        border: 1px dotted red;
+        color: blue !important;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      * {
+        font-family: "Roboto Slab", serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      /* эти надо смотреть удлаять или нет */
+      @keyframes color {
+        0% {
+          background: #d2d2d2;
+        }
+        20% {
+          background: #33cc36;
+        }
+        40% {
+          background: #b8cc33;
+        }
+        60% {
+          background: #fcca00;
+        }
+        80% {
+          background: #33cc36;
+        }
+        100% {
+          background: #33cccc;
+        }
+      }
+      header,
+      footer {
+        font-size: 40px;
+        box-shadow: 6px 6px 6px 6px rgba(34, 60, 80, 0.05);
+        height: 180px;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto Slab", serif;
+        background-color: #fffdf4;
+      }
+
+      .container-map {
+        animation: color 4s infinite linear;
+      }
+      .wrapper-museum {
+        background-image: url("/img/noise.svg");
+      }
+    </style>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Коллекции</title>
+  </head>
+  <body style="overflow-y: scroll">
+    <header>
+      header
+      <ul class="menu-delete">
+        <li><a href="index.html">Домашняя</a></li>
+        <li><a href="collections.html">Коллекции</a></li>
+        <li><a href="detail.html">Детальная</a></li>
+        <li><a href="">Ждем</a></li>
+      </ul>
+    </header>
+
+    <section class="head-detail">
+      <div class="head-detail__image-wrapper">
+        <div class="head-detail__image">
+          <div class="head-detail__overlay"></div>
+          <img src="img/bg.jpg" alt="background-detail" />
+        </div>
+      </div>
+      <div class="head-detail__content-wrapper">
+        <div class="container-museum">
+          <div class="image-card__label">Аудиозапись</div>
+          <h1 class="head__title">Мне было тогда шестнадцать</h1>
+          <div class="head__text">
+            Воспоминания Нины Максимовны Киян о&nbsp;работе первых строителей
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-detail">
+      <div class="container-museum">
+        <p>
+          В&nbsp;2020&nbsp;году, в&nbsp;условиях пандемии короновируса, наш
+          музей, как и&nbsp;все культурные учреждения страны, был закрыт. Для
+          того, чтобы любители краеведения не&nbsp;были оторваны
+          от&nbsp;музейной жизни, мы&nbsp;подготовили большое количество
+          виртуальных туров по&nbsp;музею и&nbsp;интернет-обзоров музейных
+          коллекций. Предлагаем вам совершить путешествие по&nbsp;музею,
+          не&nbsp;выходя из&nbsp;дома!
+        </p>
+        <h3>1. Первые дни на&nbsp;стройке</h3>
+        <p>
+          Приехала наша семья из&nbsp;Архангельска в&nbsp;Северодвинск, вернее,
+          на&nbsp;то место, где начинался город, зимой 1937&nbsp;года.
+          А&nbsp;в&nbsp;мае того&nbsp;же года, когда начали забивать первые сваи
+          под фундамент будущих предприятий, я&nbsp;уже работала учетчицей
+          свайной бойки.
+        </p>
+        <p>
+          Работа простая, но&nbsp;важная&nbsp;&mdash; вести учет,
+          на&nbsp;сколько погружаются сваи за&nbsp;определенное количество
+          ударов сваебойной бабы, и&nbsp;когда осадка прекращается вовсе.
+          Однажды не&nbsp;выдержал обруч сваи, и&nbsp;осколком дерева ударило
+          меня по&nbsp;спине. Пришлось полежать в&nbsp;больнице, если можно
+          назвать больницей времянку барачного типа. Хорошо еще, что отвернуться
+          успела, могло быть хуже.
+        </p>
+
+        <div class="content-detail__imagex2 imagex2">
+          <div class="imagex2__row">
+            <div class="imagex2__col">
+              <img src="img/image 30.jpg" alt="" />
+            </div>
+            <div class="imagex2__col">
+              <img src="img/image 31.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <p>
+          Мне тогда минуло 16&nbsp;лет, сестренке&nbsp;12, а&nbsp;3&nbsp;брата
+          были совсем еще маленькие. В&nbsp;доме &#8470;&nbsp;28/7
+          по&nbsp;Советской улице&nbsp;&mdash; первом настоящем жилом доме
+          города&nbsp;&mdash; мы&nbsp;справили свое новоселье.
+        </p>
+        <p>
+          Но&nbsp;это уже потом, а&nbsp;сначала сюда приехал с&nbsp;первыми
+          баржами наш отец, Максим Дмитриевич Резвый, бывший красный партизан
+          Шенкурского уезда в&nbsp;дни гражданской войны. Семьям жить было пока
+          что негде, и&nbsp;я приходила к&nbsp;отцу из&nbsp;Архангельска.
+          Интересно казалось на&nbsp;новом месте работы отца,
+          да&nbsp;и&nbsp;обстирать его надо, кое-что из&nbsp;одежды заштопать. Я
+          ведь была старшая, у&nbsp;матери на&nbsp;руках еще маленькие братья и
+          сестренка. Приходила я&nbsp;к&nbsp;папе пешком, вдоль по&nbsp;речке
+          пролегала тропка. Железной дороги тогда еще не&nbsp;существовало.
+          Рейсовые теплоходы не&nbsp;ходили.
+        </p>
+        <p>
+          Помню, был очень строгий контроль за&nbsp;свайной бойкой. Каждому
+          ясно, что может случиться со&nbsp;стенами предприятий, если сваи
+          забивать не&nbsp;до конца. Организовывались проверки, и&nbsp;всех, кто
+          был причастен к свайной бойке, переживали за&nbsp;свои сваи, работали
+          добросовестно.
+        </p>
+        <blockquote>
+          Бывало,&nbsp;&mdash; вспоминает Федор Сергеевич,&nbsp;&mdash; ведешь
+          состав, а&nbsp;пару не хватает. Угля-то не&nbsp;было, приходилось
+          топить сырыми дровами....
+        </blockquote>
+        <h3>2. Местами шпалы тонули в&nbsp;болоте</h3>
+        <p>
+          Начиналось строительство от&nbsp;станции Исакогорка
+          до&nbsp;Никольского устья. В&nbsp;том далеком 1936 году зашел
+          в&nbsp;отдел кадров конторы &laquo;Желдорстрой&raquo;, которая была
+          в&nbsp;Исакогорке, с&nbsp;правами помощника машиниста Федор Сергеевич
+          Зиновьев.
+        </p>
+        <div class="content-detail__imagex1">
+          <img src="img/image 31.jpg" alt="" />
+          <span class="sign"
+            >Строительство железной дороги Исакогорка&nbsp;&mdash; Никольское
+            устье.&nbsp;1937&nbsp;г.</span
+          >
+        </div>
+        <p>
+          Зиновьев видел, какие трудности испытывали путейцы при строительстве
+          железнодорожной ветки. Местами шпалы тонули в&nbsp;болоте. Приходилось
+          делать клетки из&nbsp;шпал и&nbsp;засыпать их&nbsp;песком. Федор
+          Сергеевич&nbsp;&mdash; помощник машиниста&nbsp;&mdash; поставлял для
+          строителей составы с&nbsp;песком, шпалами, рельсами.
+        </p>
+        <p>
+          В&nbsp;1937 году пошли до&nbsp;Никольского устья первые рабочие
+          поезда. Вскоре Зиновьев успешно сдал на&nbsp;права машиниста, переехал
+          из&nbsp;Исакогорки в&nbsp;Северодвинск и&nbsp;стал самостоятельно
+          водить составы. Всю войну он&nbsp;доставлял грузы оборонного значения.
+          За&nbsp;это награжден медалями &laquo;За&nbsp;оборону
+          Заполярья&raquo;, &laquo;За&nbsp;доблестный труд в&nbsp;Великой
+          Отечественной войне&raquo;.
+        </p>
+
+        <div class="tags-detail">
+          <div class="tags-detail__row">
+            <a href="#" class="tags-detail__col">Сделано в Северодвинске</a>
+            <a href="#" class="tags-detail__col">Страницы истории</a>
+          </div>
+        </div>
+        <div class="social-detail">
+          <div class="social-detail__row">
+          <div class="social-detail__like"></div>
+          <div class="social-detail__links">
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+          </div>
+          
+          
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>footer</footer>
+
+    <script src="select.js"></script>
+  </body>
+</html>
