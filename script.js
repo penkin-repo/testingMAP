@@ -26,7 +26,7 @@ class createMap {
          */
         MAX_ZOOM = 6,
         FIRST_ZOOM = 0,
-        FIRST_ZOOM = 2,
+        FIRST_ZOOM = 3,
         PIC_WIDTH = 8858,
         PIC_HEIGHT = 8858;
 
