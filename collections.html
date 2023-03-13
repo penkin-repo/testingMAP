@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <style>
-      :root {
-        font-family: "Roboto Slab", Georgia, "Times New Roman", serif;
-      }
-    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      /* удалить стили */
+      /* стили менюшки для разработки*/
       .menu-delete {
         font-size: 16px;
         list-style: none;
@@ -24,35 +19,6 @@
         margin: 5px;
       }
 
-      * {
-        font-family: "Roboto Slab", serif;
-      }
-
-      body {
-        margin: 0;
-      }
-
-      /* эти надо смотреть удлаять или нет */
-      @keyframes color {
-        0% {
-          background: #d2d2d2;
-        }
-        20% {
-          background: #33cc36;
-        }
-        40% {
-          background: #b8cc33;
-        }
-        60% {
-          background: #fcca00;
-        }
-        80% {
-          background: #33cc36;
-        }
-        100% {
-          background: #33cccc;
-        }
-      }
       header,
       footer {
         font-size: 40px;
@@ -65,27 +31,13 @@
         font-family: "Roboto Slab", serif;
         background-color: #fffdf4;
       }
-
-      .container-map {
-        animation: color 4s infinite linear;
-      }
-      .wrapper-museum {
-        background-image: url("/img/noise.svg");
-      }
     </style>
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
-      rel="stylesheet"
-    /> -->
-
+    <script src="select.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Коллекции</title>
   </head>
-  <body style="overflow-y: scroll">
+  <body>
     <header>
       header
       <ul class="menu-delete">
@@ -150,6 +102,7 @@
               class="button-gen filter__send"
               value="Применить фильтр"
             />
+
             <button type="reset" class="filter__reset"></button>
           </form>
         </div>
@@ -289,7 +242,5 @@
     </div>
 
     <footer>footer</footer>
-
-    <script src="select.js"></script>
   </body>
 </html>

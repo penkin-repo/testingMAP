@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      /* удалить стили */
+      /* стили менюшки для разработки*/
       .menu-delete {
         font-size: 16px;
         list-style: none;
@@ -24,35 +24,6 @@
         margin: 5px;
       }
 
-      * {
-        font-family: "Roboto Slab", serif;
-      }
-
-      body {
-        margin: 0;
-      }
-
-      /* эти надо смотреть удлаять или нет */
-      @keyframes color {
-        0% {
-          background: #d2d2d2;
-        }
-        20% {
-          background: #33cc36;
-        }
-        40% {
-          background: #b8cc33;
-        }
-        60% {
-          background: #fcca00;
-        }
-        80% {
-          background: #33cc36;
-        }
-        100% {
-          background: #33cccc;
-        }
-      }
       header,
       footer {
         font-size: 40px;
@@ -65,27 +36,13 @@
         font-family: "Roboto Slab", serif;
         background-color: #fffdf4;
       }
-
-      .container-map {
-        animation: color 4s infinite linear;
-      }
-      .wrapper-museum {
-        background-image: url("/img/noise.svg");
-      }
     </style>
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
-      rel="stylesheet"
-    /> -->
-
+    <script src="select.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
-
     <title>Коллекции</title>
   </head>
-  <body style="overflow-y: scroll">
+  <body>
     <header>
       header
       <ul class="menu-delete">
@@ -219,27 +176,37 @@
           <div class="tags-detail__row">
             <a href="#" class="tags-detail__col">Сделано в Северодвинске</a>
             <a href="#" class="tags-detail__col">Страницы истории</a>
+            <a href="#" class="tags-detail__col">Дополнительный длинный тег</a>
+            <a href="#" class="tags-detail__col">Тег</a>
+            <a href="#" class="tags-detail__col">Дополнительный длинный тег</a>
+            <a href="#" class="tags-detail__col">Тег</a>
           </div>
         </div>
-        <div class="social-detail">
-          <div class="social-detail__row">
-          <div class="social-detail__like"></div>
-          <div class="social-detail__links">
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-          </div>
-          
-          
-          </div>
-        </div>
-      </div>
 
+        <div class="d-nav">
+          <div class="d-nav__row">
+            <div class="d-nav__back">
+              <a href="#">
+                <div class="d-nav__body">
+                  <div class="d-nav__arrow">Предыдущая история</div>
+                  <div class="d-nav__title">Машинист паровоза</div>
+                </div>
+              </a>
+            </div>
+            <div class="d-nav__forward">
+              <a href="#">
+                <div class="d-nav__body">
+                  <div class="d-nav__arrow">Следующая история</div>
+                  <div class="d-nav__title">Город моего детства</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <footer>footer</footer>
-
-    <script src="select.js"></script>
   </body>
 </html>

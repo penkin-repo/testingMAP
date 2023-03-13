@@ -1,6 +1,8 @@
 import pointList from "./pointList.js";
 
-// start class
+// start class 
+// data туда передается массив с точками
+// map туда передается id блока с картой. По умолчанию он map
 
 class createMap {
   constructor(data, id = "map") {
@@ -257,6 +259,7 @@ class createMap {
   }
 }
 
+// вызываем класс и метод render
 let myMap = new createMap(pointList);
 myMap.render();
 
